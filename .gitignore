@@ -35,6 +35,7 @@
 *.rbc
 
 /.bundle
-/Gemfile.lock
 /Gemfile.local
+.ruby-gemset
+.ruby-version
 

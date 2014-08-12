@@ -8,6 +8,18 @@ gem "builder", ">= 3.0.4"
 gem "request_store", "1.0.5"
 gem "mime-types"
 
+group :development do
+  gem 'capistrano', '~> 3.2.0'
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rvm', require: false
+  gem 'capistrano3-unicorn', require: false
+end
+
+group :production do
+  gem 'unicorn'
+end
+
 # Optional gem for LDAP authentication
 group :ldap do
   gem "net-ldap", "~> 0.3.1"
