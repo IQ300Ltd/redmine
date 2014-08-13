@@ -58,6 +58,8 @@ module RedmineApp
       instance_eval File.read(File.join(File.dirname(__FILE__), 'additional_environment.rb'))
     end
 
+    config.force_ssl = Rails.env.production?
+
     config.time_zone = 'Moscow'
   end
 end
